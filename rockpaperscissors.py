@@ -1,10 +1,12 @@
 import random
 
+#just one class
 class Rockpaperscissors():
 
     def __init__(self):
-
-        self.game_no = 0
+        
+        #initialise variables
+        self.game_no = 1 #
         self.human = 0
         self.computer = 0
         self.user_choice = ""
@@ -64,8 +66,10 @@ class Rockpaperscissors():
             self.user_choice = self.user()
             self.comp_choice = self.random_number()
             self.winner()
+            print "Game No.: ", self.game_no
             print "The Score is: ", self.human, self.computer
             if self.end_game == False:
+                self.game_no = self.game_no += 1
                 return
 
 if __name__ == '__main__':
