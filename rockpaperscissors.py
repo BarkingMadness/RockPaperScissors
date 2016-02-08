@@ -78,8 +78,8 @@ class Rockpaperscissors():
             self.again = self.end_game()
             if self.again == False:
                 return
-#runs program
+            
+#creates and instance of RockPaperScissors and then runs the programme
 if __name__ == '__main__':
     game = Rockpaperscissors()
     game.game_loop()
-
