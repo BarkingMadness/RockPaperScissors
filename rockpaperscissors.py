@@ -2,10 +2,9 @@ import random
 
 #create class
 class Rockpaperscissors():
-
+    
     def __init__(self):
-
-        #initialise variables
+        #initialise variables used in the below methods
         self.game_no = 0 #counts number of games played
         self.human = 0 #counts game won by human player
         self.computer = 0 #counts games won by computer
@@ -81,6 +80,6 @@ class Rockpaperscissors():
                 return
 #runs program
 if __name__ == '__main__':
-    game1 = Rockpaperscissors()
-    game1.game_loop()
+    game = Rockpaperscissors()
+    game.game_loop()
 
