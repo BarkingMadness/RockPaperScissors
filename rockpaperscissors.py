@@ -1,5 +1,4 @@
 import random
-
 # create class
 class Rockpaperscissors():
 
@@ -25,8 +24,6 @@ class Rockpaperscissors():
                 print ("\nYou selected: Scissors")
 
             return self.user_choice
-
-
 
     # allows computer to select RPS randomly, from list
     def random_number(self):
