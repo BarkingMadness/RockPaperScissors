@@ -4,7 +4,7 @@ import random
 class Rockpaperscissors():
     
     def __init__(self):
-        #initialise variables used in the below methods
+        #initialise variables so they can be used in the methods below
         self.game_no = 0 #counts number of games played
         self.human = 0 #counts game won by human player
         self.computer = 0 #counts games won by computer
