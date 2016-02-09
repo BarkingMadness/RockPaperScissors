@@ -1,4 +1,6 @@
 import random
+
+
 # create class
 class Rockpaperscissors():
 
@@ -63,7 +65,7 @@ class Rockpaperscissors():
             return False
         return
 
-    # called by main function
+    # called by main function below
     def game_loop(self):
         while True:
             self.game_no += 1
