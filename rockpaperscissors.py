@@ -25,16 +25,16 @@ class Rockpaperscissors():
             elif self.user_choice == "S":
                 print ("\nYou selected: Scissors")
 
-            return self.user_choice
+            return self.user_choice # returns the user selection to the program so it can be used later.
 
     # allows computer to select RPS randomly, from list
     def random_number(self):
         rps_list = ['Rock', 'Paper', 'Scissors']
         self.comp_choice = random.choice(rps_list)
         print ("Computer selected: "), self.comp_choice
-        return self.comp_choice
+        return self.comp_choice # returns the computer selection to the programe so it can be used later
 
-    # to decide winner of game
+    # to decide the winner of the game and add 1 to the humn or computer score
     def winner(self):
         if self.user_choice == 'R' and self.comp_choice == 'Paper':
             print "Paper covers Rock - You win!"
@@ -56,7 +56,7 @@ class Rockpaperscissors():
             self.human += 1
         else:
             print "It's a tie!"
-        return self.human, self.computer
+        return self.human, self.computer # returns the outcome of the game so it can be used to keep track of the overall score.
 
     # allows user to decide if they want to play another game
     def end_game(self):
@@ -65,7 +65,7 @@ class Rockpaperscissors():
             return False
         return
 
-    # called by main function below
+    # called by main function below. 
     def game_loop(self):
         while True:
             self.game_no += 1
