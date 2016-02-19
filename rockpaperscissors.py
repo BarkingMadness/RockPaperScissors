@@ -8,13 +8,13 @@ class Rockpaperscissors():
     def __init__(self):
         # initialise variables so they can be used in the methods below
         self.game_no = 0 # counts number of games played
-        self.human = 0 # counts game won by human player
+        self.human = 0 # counts games won by human player
         self.computer = 0 # counts games won by computer
         self.user_choice = "" # holds instance of human R,P,S selection
         self.comp_choice = "" # holds random choice made by computer
         self.again = "" # holds variable to determine if user wants another game
 
-    # allows user to enter their choice of RPS
+    # allows user to enter their choice of RPS. While loop asks player for choice until 'R', 'P', or 'S' is entered.
     def user(self):
             self.user_choice = raw_input("Select (R)ock, (P)aper, or (S)cissors: ").upper()
             while self.user_choice != 'R' and self.user_choice != 'P' and self.user_choice != 'S':
