@@ -1,3 +1,4 @@
+# imports random to allow computer to choose random 'RPS'
 import random
 
 
@@ -78,7 +79,7 @@ class Rockpaperscissors():
             if self.again == False:
                 return
 
-# creates and instance of RockPaperScissors and then runs the programme
+# creates an instance of RockPaperScissors called 'game'. Then calls the 'main_loop' using 'game'.
 if __name__ == '__main__':
     game = Rockpaperscissors()
     game.game_loop()
